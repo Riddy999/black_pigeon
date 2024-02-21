@@ -1,18 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { MapContainer, TileLayer } from 'react-leaflet'
+import 'leaflet/dist/leaflet.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-
-      </div>
-
-    </>
+        <MapContainer className='h-full' center={[48.2083, 16.3731]} zoom={13}>
+          <TileLayer
+            attribution='© OpenStreetMap Contributors. Tiles courtesy of Humanitarian 
+            OpenStreetMap Team'
+            url="http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
+          />
+        </MapContainer>
   )
 }
 
