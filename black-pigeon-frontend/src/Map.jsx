@@ -6,9 +6,9 @@ function Map() {
 
   return (
     <>
-      <MapContainer zoomControl={false} minZoom={14} maxZoom={18} className='h-full' center={[48.2083, 16.3731]} zoom={14}>
+      <MapContainer zoomControl={false} minZoom={14} maxZoom={18} className='h-full flex flex-col-reverse' center={[48.2083, 16.3731]} zoom={14}>
 
-        <ButtonContainer />
+        <ButtonContainer/>
         <TileLayer
           url="http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
         />
