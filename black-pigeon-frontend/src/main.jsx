@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Map from './Map.jsx'
-import ClassicButton from './ClassicButton.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
