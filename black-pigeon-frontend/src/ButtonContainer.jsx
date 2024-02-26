@@ -1,5 +1,3 @@
-import plus from "./assets/plus.svg"
-
 function ClassicButton({logo}) {
     const path = "../src/assets/"+logo+".svg";
     var active = false;
@@ -20,7 +18,7 @@ function ClassicButton({logo}) {
 function ButtonContainer() {
     
     return (
-          <div className="flex flex-row-reverse gap-2 w-full h-auto bg-slate-500 z-[1000] p-2 bottom-0 relative overflow-x-auto">
+          <div className="flex flex-row-reverse gap-2 w-full h-auto bg-slate-500 z-[1000] p-2 bottom-0 relative overflow-x-auto button-container">
               <ClassicButton logo={'plus'}/>
               <ClassicButton logo={'react'}/>
               <ClassicButton logo={'plus'}/>
