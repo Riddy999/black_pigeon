@@ -1,7 +1,6 @@
 function ClassicButton({logo}) {
     const path = "../src/assets/"+logo+".svg";
     var active = false;
-
     function additionalIcons() {
       active = !active
     }

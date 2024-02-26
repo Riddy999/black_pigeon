@@ -5,10 +5,16 @@ import { Popup } from "react-leaflet"
 
 function LocationMarker() {
     const map = useMap()
+    var coordinates = {
+        lat: Float64Array, 
+        lng: Float64Array
+    }
 
-    
+
     map.on('click', function(ev) {
-        alert(ev.latlng)
+        coordinates.lat = ev.latlng.lat
+        coordinates.lng = ev.latlng.lng
+        console.log(coordinates.lat+" --- "+coordinates.lng)
     })
   
   }
