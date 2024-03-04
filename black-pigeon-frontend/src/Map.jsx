@@ -2,7 +2,7 @@ import { MapContainer, TileLayer, SVGOverlay, useMapEvents } from 'react-leaflet
 import ButtonContainer from './ButtonContainer.jsx'
 import 'leaflet/dist/leaflet.css'
 import React from 'react'
-import LocationMarker from './LocationMarker.jsx'
+import LocationMarker from './features/marker/LocationMarker.jsx'
 
 function Map() {
   return (
